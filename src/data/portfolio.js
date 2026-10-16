@@ -1,12 +1,12 @@
 export const personalInfo = {
   name: 'Krish Kataria',
-  title: 'Computer Engineering Student | Full-Stack Developer | Competitive Programmer',
+  title: 'Computer Engineering Student',
   tagline:
     'Computer Engineering student at Thapar Institute of Engineering and Technology',
   email: 'kkrishkataria@gmail.com',
   phone: '8847355881',
   github: 'https://github.com/kkrishkataria',
-  linkedin: 'https://www.linkedin.com/in/krish-kataria-0b46bb321',
+  linkedin: 'https://linkedin.com/in/kkrishkataria',
   leetcode: 'https://leetcode.com/u/kkrishkataria/',
   resumeLink: '/Resume.pdf',
 }
@@ -15,20 +15,20 @@ export const education = [
   {
     school: 'Thapar Institute of Engineering and Technology',
     degree: 'B.E. Computer Engineering',
-    score: 'CGPA: 9.66/10',
+    score: 'CGPA: 9.46/10',
     duration: 'Aug 2024 – Present',
     location: 'Patiala, Punjab',
   },
   {
     school: 'Holy Heart Day Boarding Public School',
-    degree: '12th Grade',
+    degree: 'Class XII',
     score: '92.8%',
     duration: '2024',
     location: 'Fazilka, Punjab',
   },
   {
     school: 'Holy Heart Day Boarding Public School',
-    degree: '10th Grade',
+    degree: 'Class X',
     score: '92.8%',
     duration: '2022',
     location: 'Fazilka, Punjab',
@@ -36,8 +36,18 @@ export const education = [
 ]
 
 export const skills = {
-  languages: ['C', 'C++', 'Python', 'JavaScript', 'SQL', 'R'],
-  frameworks: ['React.js', 'HTML', 'CSS', 'Tailwind CSS'],
+  languages: ['C', 'C++', 'Java', 'Python', 'JavaScript', 'SQL', 'R'],
+  frontend: ['React.js', 'HTML', 'CSS', 'Tailwind CSS'],
+  backendDatabase: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose'],
+  machineLearningNlp: [
+    'Scikit-learn',
+    'Pandas',
+    'NumPy',
+    'TensorFlow',
+    'Matplotlib',
+    'Seaborn',
+    'NLTK',
+  ],
   coreCS: [
     'Data Structures & Algorithms',
     'OOP',
@@ -45,61 +55,54 @@ export const skills = {
     'OS',
     'Computer Networks',
   ],
-  tools: ['Git', 'GitHub', 'VS Code', 'Google Colab', 'MATLAB', 'AutoCAD'],
+  developerTools: [
+    'Git',
+    'GitHub',
+    'VS Code',
+    'AWS',
+    'Postman',
+    'Docker',
+    'Jupyter Notebook',
+    'Google Colab',
+  ],
+  concepts: ['REST APIs', 'CRUD', 'Data Preprocessing', 'EDA', 'State Management'],
 }
 
 export const projects = [
   {
-    title: 'Robotics-Egocentric-Data-Pipeline',
-    date: '2025',
-    tech: ['Python', 'PyTorch', 'Computer Vision', 'Data Pipeline'],
+    title: 'Verity Health — Provider Risk Analytics',
+    date: 'Oct 2026',
+    tech: ['Python', 'Scikit-learn', 'Pandas', 'React.js'],
     description:
-      'Data pipeline for robotics egocentric vision tasks. Processes and transforms video data for ML model training with optimized data loading and preprocessing workflows.',
-    github: 'https://github.com/kkrishkataria/Robotics-Egocentric-Data-Pipeline',
-    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=400&fit=crop',
+      'Healthcare provider fraud detection and risk analytics platform. Analyzed Medicare data covering 5,410 providers, 40,474 inpatient claims, and 517,737 outpatient claims; built provider-level features and an interactive dashboard for risk review.',
+    github: 'https://github.com/kkrishkataria/Healthcare-Fraud-Detection',
+    demo: 'https://healthcare-fraud-detection-beryl.vercel.app',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=400&fit=crop',
   },
   {
-    title: 'Malaria-Cell-prediction',
-    date: '2025',
-    tech: ['Python', 'TensorFlow', 'Deep Learning', 'Image Classification'],
+    title: 'Malaria Cell Classification',
+    date: 'June 2026',
+    tech: ['Python', 'TensorFlow', 'Scikit-learn', 'NumPy', 'Pandas'],
     description:
-      'Deep learning model for malaria cell image classification. Uses CNN architecture to detect malaria parasites in blood smear images with high accuracy.',
+      'Five-member team project using a CNN to classify infected blood cells. Prepared 27,558 microscopic images with resizing and augmentation, and evaluated the model at 96% accuracy, 95.98% recall, 94.61% precision, and 0.99 ROC-AUC.',
     github: 'https://github.com/kkrishkataria/Malaria-Cell-prediction',
     image: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&h=400&fit=crop',
   },
   {
-    title: 'CPU-Prediction',
-    date: '2025',
-    tech: ['Python', 'Scikit-learn', 'Machine Learning', 'Data Analysis'],
+    title: 'FinanceScan',
+    date: '2026',
+    tech: ['Next.js', 'Clerk', 'Supabase', 'Gemini API'],
     description:
-      'ML model predicting CPU performance and usage patterns. Trained on system metrics data to forecast resource requirements and optimize scheduling.',
-    github: 'https://github.com/kkrishkataria/CPU-Prediction',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop',
-  },
-  {
-    title: 'Blood-Bank',
-    date: '2025',
-    tech: ['React.js', 'Node.js', 'MongoDB', 'Express'],
-    description:
-      'Full-stack blood bank management web application. Features donor registration, blood inventory tracking, and request management system with real-time updates.',
-    github: 'https://github.com/kkrishkataria/Blood-Bank',
-    image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800&h=400&fit=crop',
-  },
-  {
-    title: 'EduHub',
-    date: '2025',
-    tech: ['React.js', 'Node.js', 'MongoDB', 'Express'],
-    description:
-      'Full-stack student portal and management system. Includes course enrollment, grade tracking, attendance management, and student-teacher communication features.',
-    github: 'https://github.com/kkrishkataria/Student_Hub',
-    image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&h=400&fit=crop',
+      'Financial application built with Next.js, Clerk, and Supabase, with a Gemini API fallback integrated into the project.',
+    github: 'https://github.com/kkrishkataria/financeScan',
+    image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=400&fit=crop',
   },
 ]
 
 export const achievements = [
   'Selected as Bharti Airtel Scholar 2024 — Top 250 nationwide out of 1,00,000+ applicants, 100% merit scholarship + laptop',
-  'College Merit Scholarship for 9.66 CGPA, top-performing student in 1st and 2nd year Computer Engineering',
-  'Solved 600+ DSA problems on LeetCode across 20+ topics: Graphs, DP, Trees, Binary Search, Greedy, Sliding Window',
+  'College Merit Scholarship for maintaining a CGPA of 9.46/10 in the 1st and 2nd year of Computer Engineering',
+  'Solved 500+ Data Structures & Algorithms problems on LeetCode across 20+ topics, including Graphs, Dynamic Programming, Trees, Binary Search, Greedy, and Sliding Window',
 ]
 
 export const positions = [

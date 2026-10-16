@@ -18,7 +18,7 @@ const CODE_LINES = [
   ],
   [
     { text: '  role: ', type: 'punctuation' },
-    { text: '"Full-Stack Developer"', type: 'string' },
+    { text: '"Computer Engineering Student"', type: 'string' },
     { text: ',', type: 'punctuation' },
   ],
   [
@@ -31,10 +31,6 @@ const CODE_LINES = [
     { text: ', ', type: 'punctuation' },
     { text: '"MongoDB"', type: 'string' },
     { text: '],', type: 'punctuation' },
-  ],
-  [
-    { text: '  currentFocus: ', type: 'punctuation' },
-    { text: '"Backend Development"', type: 'string' },
   ],
   [{ text: '};', type: 'punctuation' }],
 ]
@@ -67,7 +63,7 @@ const COMMANDS = {
     response: `Name: ${personalInfo.name}\nRole: ${personalInfo.title}\nEmail: ${personalInfo.email}`,
   },
   skills: {
-    response: 'Languages: C, C++, Python, JavaScript, SQL, R\nFrameworks: React.js, HTML, CSS, Tailwind CSS\nCore CS: DSA, OOP, DBMS, OS, Computer Networks\nTools: Git, GitHub, VS Code, Google Colab, MATLAB, AutoCAD',
+    response: 'Languages: C, C++, Java, Python, JavaScript, SQL, R\nFrontend: React.js, HTML, CSS, Tailwind CSS\nBackend & Database: Node.js, Express.js, MongoDB, Mongoose\nMachine Learning & NLP: Scikit-learn, Pandas, NumPy, TensorFlow, Matplotlib, Seaborn, NLTK\nCore CS: DSA, OOP, DBMS, OS, Computer Networks\nDeveloper Tools: Git, GitHub, VS Code, AWS, Postman, Docker, Jupyter Notebook, Google Colab\nConcepts: REST APIs, CRUD, Data Preprocessing, EDA, State Management',
     action: () => scrollToSection(null, '#skills'),
   },
   projects: {

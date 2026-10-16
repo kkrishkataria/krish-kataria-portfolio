@@ -4,9 +4,9 @@ import OrbitingTechIcons from './OrbitingTechIcons'
 import LeetCodeStats from './LeetCodeStats'
 
 const stats = [
-  { end: 600, suffix: '+', label: 'LeetCode Problems', decimals: 0 },
-  { end: 9.66, suffix: '', label: 'CGPA', decimals: 2 },
-  { end: 5, suffix: '+', label: 'Projects', decimals: 0 },
+  { end: 500, suffix: '+', label: 'LeetCode Problems', decimals: 0 },
+  { end: 9.46, suffix: '/10', label: 'CGPA', decimals: 2 },
+  { end: 3, suffix: '', label: 'Featured Projects', decimals: 0 },
 ]
 
 function StatCounter({ end, suffix, label, decimals, duration = 1800, delay = 0 }) {

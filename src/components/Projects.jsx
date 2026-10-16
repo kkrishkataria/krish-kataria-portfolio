@@ -6,19 +6,7 @@ function isValidLink(url) {
   return typeof url === 'string' && url.startsWith('http')
 }
 
-function LinkButton({ href, label, icon: Icon, disabled }) {
-  if (disabled) {
-    return (
-      <span
-        title={`${label} link coming soon`}
-        className="inline-flex h-10 w-10 cursor-not-allowed items-center justify-center rounded-lg border border-subtle bg-muted text-text-secondary/40"
-        aria-disabled="true"
-      >
-        <Icon size={18} />
-      </span>
-    )
-  }
-
+function LinkButton({ href, label, icon: Icon }) {
   return (
     <motion.a
       href={href}
@@ -113,20 +101,24 @@ function ProjectCard({ project, index }) {
         ))}
       </div>
 
-      <div className="flex items-center gap-3 border-t border-subtle pt-4">
-        <LinkButton
-          href={project.github}
-          label={`${project.title} GitHub`}
-          icon={FaGithub}
-          disabled={!isValidLink(project.github)}
-        />
-        <LinkButton
-          href={project.demo}
-          label={`${project.title} demo`}
-          icon={FaExternalLinkAlt}
-          disabled={!isValidLink(project.demo)}
-        />
-      </div>
+      {(isValidLink(project.github) || isValidLink(project.demo)) && (
+        <div className="flex items-center gap-3 border-t border-subtle pt-4">
+          {isValidLink(project.github) && (
+            <LinkButton
+              href={project.github}
+              label={`${project.title} GitHub`}
+              icon={FaGithub}
+            />
+          )}
+          {isValidLink(project.demo) && (
+            <LinkButton
+              href={project.demo}
+              label={`${project.title} demo`}
+              icon={FaExternalLinkAlt}
+            />
+          )}
+        </div>
+      )}
     </motion.article>
   )
 }

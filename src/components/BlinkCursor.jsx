@@ -1,4 +1,4 @@
-export default function BlinkCursor() {
+  export default function BlinkCursor() {
   return (
     <span className="blink-cursor" aria-hidden="true">
       _

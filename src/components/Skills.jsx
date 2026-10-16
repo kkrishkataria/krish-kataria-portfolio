@@ -3,9 +3,12 @@ import { skills } from '../data/portfolio'
 
 const skillCategories = [
   { key: 'languages', label: 'Languages' },
-  { key: 'frameworks', label: 'Frameworks & Web' },
+  { key: 'frontend', label: 'Frontend' },
+  { key: 'backendDatabase', label: 'Backend & Database' },
+  { key: 'machineLearningNlp', label: 'Machine Learning & NLP' },
   { key: 'coreCS', label: 'Core CS' },
-  { key: 'tools', label: 'Tools' },
+  { key: 'developerTools', label: 'Developer Tools' },
+  { key: 'concepts', label: 'Concepts' },
 ]
 
 const containerVariants = {
