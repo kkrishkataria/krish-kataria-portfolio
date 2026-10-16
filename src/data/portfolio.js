@@ -102,7 +102,7 @@ export const projects = [
 export const achievements = [
   'Selected as Bharti Airtel Scholar 2024 — Top 250 nationwide out of 1,00,000+ applicants, 100% merit scholarship + laptop',
   'College Merit Scholarship for maintaining a CGPA of 9.46/10 in the 1st and 2nd year of Computer Engineering',
-  'Solved 500+ Data Structures & Algorithms problems on LeetCode across 20+ topics, including Graphs, Dynamic Programming, Trees, Binary Search, Greedy, and Sliding Window',
+  'Solved 700+ Data Structures & Algorithms problems on LeetCode across 20+ topics, including Graphs, Dynamic Programming, Trees, Binary Search, Greedy, and Sliding Window',
 ]
 
 export const positions = [

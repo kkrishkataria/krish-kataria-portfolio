@@ -4,7 +4,7 @@ import OrbitingTechIcons from './OrbitingTechIcons'
 import LeetCodeStats from './LeetCodeStats'
 
 const stats = [
-  { end: 500, suffix: '+', label: 'LeetCode Problems', decimals: 0 },
+  { end: 700, suffix: '+', label: 'LeetCode Problems', decimals: 0 },
   { end: 9.46, suffix: '/10', label: 'CGPA', decimals: 2 },
   { end: 3, suffix: '', label: 'Featured Projects', decimals: 0 },
 ]
@@ -58,7 +58,11 @@ function StatCounter({ end, suffix, label, decimals, duration = 1800, delay = 0 
     >
       <p className="text-2xl font-bold tabular-nums text-accent sm:text-3xl md:text-4xl">
         {display}
-        {suffix}
+        {suffix && (
+          <span className="ml-0.5 align-baseline text-[0.58em] font-semibold tracking-normal">
+            {suffix}
+          </span>
+        )}
       </p>
       <p className="mt-1.5 text-xs text-text-secondary sm:mt-2 sm:text-sm md:text-base">
         {label}
